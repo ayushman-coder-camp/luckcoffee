@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyCoffee - Online Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/bd83b240e5.js"></script>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="img/logo01.png" alt="" width="110">
+                </a>
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="cart.html" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <section id="home">
+        <div class="textBox">
+            <h1>Online Shop</h1>
+        </div>
+        <div class="img">
+            <img src="img/header-image1.png" class="header-img">
+        </div>
+    </section>
+    <section id="addToCart">
+        <div class="cart-row">
+            <div class="cart-item">
+                <div class="cart-item-img"><img src="img/product.png" alt=""></div>
+                <div class="cart-item-text">
+                    <h3>Iced Brew Tea</h3>
+                    <span class="price">
+                        <h5>$26.71</h5>
+                    </span>
+                </div>
+                <button class="order-button" onclick="add('Iced Brew Tea')">Order</button>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-img"><img src="img/product.png" alt=""></div>
+                <div class="cart-item-text">
+                    <h3>Caramel Coffee</h3>
+                    <span class="price">
+                        <h5>$34.20</h5>
+                    </span>
+                </div>
+                <button class="order-button" onclick="add('Caramel Coffee')">Order</button>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-img"><img src="img/product.png" alt=""></div>
+                <div class="cart-item-text">
+                    <h3>Hot Tea</h3>
+                    <span class="price">
+                        <h5>$41.71</h5>
+                    </span>
+                </div>
+                <button class="order-button" onclick="add('Hot Tea')">Order</button>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-img"><img src="img/product.png" alt=""></div>
+                <div class="cart-item-text">
+                    <h3>White Mocha</h3>
+                    <span class="price">
+                        <h5>$44.22</h5>
+                    </span>
+                </div>
+                <button class="order-button" onclick="add('White Mocha')">Order</button>
+            </div>
+        </div>
+        <div class="cart-row">
+            <div class="cart-item">
+                <div class="cart-item-img"><img src="img/product.png" alt=""></div>
+                <div class="cart-item-text">
+                    <h3>Choclate Latte</h3>
+                    <span class="price">
+                        <h5>$26.11</h5>
+                    </span>
+                </div>
+                <button class="order-button" onclick="add('Choclate Latte')">Order</button>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-img"><img src="img/product.png" alt=""></div>
+                <div class="cart-item-text">
+                    <h3>Caramel Espresso</h3>
+                    <span class="price">
+                        <h5>$35.31</h5>
+                    </span>
+                </div>
+                <button class="order-button" onclick="add('Caramel Espresso')">Order</button>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-img"><img src="img/product.png" alt=""></div>
+                <div class="cart-item-text">
+                    <h3>Heated Brew Tea</h3>
+                    <span class="price">
+                        <h5>$24.79</h5>
+                    </span>
+                </div>
+                <button class="order-button" onclick="add('Heated Brew Tea')">Order</button>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-img"><img src="img/product.png" alt=""></div>
+                <div class="cart-item-text">
+                    <h3>Hot Choclate</h3>
+                    <span class="price">
+                        <h5>$20.12</h5>
+                    </span>
+                </div>
+                <button class="order-button" onclick="add('Hot Choclate')">Order</button>
+            </div>
+        </div>
+        <br><br>
+        <center>
+            <div class="cart">
+                <h1>TOTAL ITEMS - <b id="count"></b></h1>
+                <ol id="item-list" style="list-style-type: none;"></ol> <!----Item Detail Here---->
+            </div>
+            <br><br>
+            <a href="proceedcheckout.html">
+                <button class="checkout">Proceed To Checkout &#8594;</button>
+            </a>
+        </center>
+    </section>
+    <footer id="footer">
+        <center>
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564.6639136341932!2d-75.67455354582256!3d39.55911527294571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7085e09569d0f%3A0x36575b47dee82be7!2s215%20Cocoa%20Cay%20Ln%2C%20Bear%2C%20DE%2019701!5e1!3m2!1sen!2sus!4v1676159609827!5m2!1sen!2sus" width="1302" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </center>
+        <div class="information">
+            <div class="info">
+                <div class="icon"><i class="fa fa-map-marker"></i></div>
+                <div class="text">
+                    <h3>215 Cocoa Cay Ln, Bear, DE 19701</h3>
+                </div>
+            </div>
+            <div class="info">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <div class="text">
+                    <h3>messageclient14@luckcoffee.krackle.xyz</h3>
+                </div>
+            </div>
+            <div class="info">
+                <div class="icon"><i class="fa fa-mobile"></i></div>
+                <div class="text">
+                    <h3>302-568-0002</h3>
+                </div>
+            </div>
+            <div class="times">
+                <ul>
+                    <li>Monday - 8:35 - 7:42</li>
+                    <li>Tuesday - 8:35 - 7:42</li>
+                    <li>Wednesday - 8:35 - 7:42</li>
+                    <li>Thursday - 8:35 - 7:42</li>
+                    <li>Friday - 8:35 - 7:42</li>
+                    <li>Saturday - 12:20 - 6:12</li>
+                    <li>Sunday - CLOSED</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="/htdocs/main_Fun.js"></script>
+</body>
+</html>
